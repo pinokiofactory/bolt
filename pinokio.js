@@ -5,7 +5,7 @@ module.exports = {
   description: "",
   icon: "icon.png",
   menu: async (kernel, info) => {
-    let installed = info.exists("app/env")
+    let installed = info.exists("app/node_modules")
     let running = {
       install: info.running("install.js"),
       start: info.running("start.js"),
@@ -28,6 +28,7 @@ module.exports = {
             icon: "fa-solid fa-rocket",
             text: "Open Web UI",
             href: local.url,
+            popout: true,
           }, {
             icon: 'fa-solid fa-terminal',
             text: "Terminal",
