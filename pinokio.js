@@ -2,7 +2,7 @@ const path = require('path')
 module.exports = {
   version: "2.0",
   title: "bolt",
-  description: "",
+  description: "Bolt.new, with support for ALL LLMs (OpenAI, Anthropic, Ollama, OpenRouter, Gemini, or Groq, Deepseek, Mistral, etc.) https://github.com/coleam00/bolt.new-any-llm",
   icon: "icon.png",
   menu: async (kernel, info) => {
     let installed = info.exists("app/node_modules")
@@ -24,12 +24,12 @@ module.exports = {
         let local = info.local("start.js")
         if (local && local.url) {
           return [{
-            default: true,
             icon: "fa-solid fa-rocket",
             text: "Open Web UI",
             href: local.url,
             popout: true,
           }, {
+            default: true,
             icon: 'fa-solid fa-terminal',
             text: "Terminal",
             href: "start.js",
