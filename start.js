@@ -5,7 +5,8 @@ module.exports = {
       method: "shell.run",
       params: {
         venv: "env",
-        message: "litellm --model github/gpt-4o",
+        //message: "litellm --model github/gpt-4o",
+        message: "litellm --config config.yaml",
         on: [{
           // The regular expression pattern to monitor.
           // When this pattern occurs in the shell terminal, the shell will return,

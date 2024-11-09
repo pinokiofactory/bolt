@@ -1,0 +1,7 @@
+model_list:
+  - litellm_params: 
+      model: "github/gpt-4o"
+  - litellm_params: 
+      model: "github/gpt-4o-mini"
+
+

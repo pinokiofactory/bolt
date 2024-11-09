@@ -30,7 +30,7 @@ GOOGLE_GENERATIVE_AI_API_KEY=
 OLLAMA_API_BASE_URL=
 
 # You only need this environment variable set if you want to use OpenAI Like models
-OPENAI_LIKE_API_BASE_URL=
+OPENAI_LIKE_API_BASE_URL=http://localhost:4000
 
 # You only need this environment variable set if you want to use DeepSeek models through their API
 DEEPSEEK_API_KEY=
