@@ -1,0 +1,29 @@
+model_list:
+  - model_name: "github/gpt-4o"
+    litellm_params: 
+      model: "github/gpt-4o"
+      api_key: "os.environ/OPENAI_LIKE_API_KEY"
+  - model_name: "github/gpt-4o-mini"
+    litellm_params: 
+      model: "github/gpt-4o-mini"
+      api_key: "os.environ/OPENAI_LIKE_API_KEY"
+#  - model_name: "github/Phi-3-5-MoE-instruct"
+#    litellm_params: 
+#      model: "github/Phi-3-5-MoE-instruct"
+#      api_key: "os.environ/OPENAI_LIKE_API_KEY"
+#  - model_name: "github/Phi-3-5-mini-instruct"
+#    litellm_params: 
+#      model: "github/Phi-3-5-mini-instruct"
+#      api_key: "os.environ/OPENAI_LIKE_API_KEY"
+#  - model_name: "github/Phi-3-5-vision-instruct"
+#    litellm_params: 
+#      model: "github/Phi-3-5-vision-instruct"
+#      api_key: "os.environ/OPENAI_LIKE_API_KEY"
+#  - model_name: "github/Llama-3-2-90B-Vision-Instruct"
+#    litellm_params: 
+#      model: "github/Llama-3-2-90B-Vision-Instruct"
+#      api_key: "os.environ/OPENAI_LIKE_API_KEY"
+#  - model_name: "github/Llama-3-2-11B-Vision-Instruct"
+#    litellm_params: 
+#      model: "github/Llama-3-2-11B-Vision-Instruct"
+#      api_key: "os.environ/OPENAI_LIKE_API_KEY"

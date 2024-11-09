@@ -1,0 +1,175 @@
+<html>
+<head>
+<style>
+html, body {
+  height: 100%;
+  margin: 0;
+}
+main {
+  font-family: Sans-serif;
+  display: flex;
+  height: 100%;
+}
+.row {
+  color: rgba(0,0,0,0.8);
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  margin: 20px 0;
+  background: whitesmoke;
+}
+.row img {
+  width: 100%;
+}
+h1 {
+  font-size: 50px;
+  line-height: 50px;
+  letter-spacing: -2px;
+  margin: 0;
+  margin-bottom: 10px;
+}
+h2 {
+  font-size: 25px;
+  margin: 0;
+  margin-bottom: 10px;
+  color: rgba(0,0,0,0.9);
+}
+.tab {
+  align-items: center;
+  text-decoration: none;
+  color: silver;
+}
+.tab-item {
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+  display: block;
+  font-size: 14px;
+  word-break: break-word;
+}
+nav {
+  width: 200px;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow: auto;
+  flex-shrink: 0;
+  border-right: 1px solid rgba(0,0,100,0.1);
+}
+.canvas {
+  overflow: auto;
+  padding: 40px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  flex-grow: 1;
+}
+.container {
+  max-width: 1000px;
+}
+a:active {
+  border-right: 10px solid black;
+}
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+  background: black;
+  color: white;
+}
+.well {
+  margin: 20px 0;
+  box-sizing: border-box;
+}
+</style>
+</head>
+<body>
+<main>
+  <nav>
+    <div class='tab'>
+      <a href='#github' class='tab-item'>Option 1. Use Free LLM API (Github)</a>
+      <!--
+      <a href='#ollama' class='tab-item'>Local LLM (Ollama)</a>
+      -->
+      <a href='#api' class='tab-item'>Option 2. Use Claude / OpenAI / Gemini / Groq / OpenRouter / Mistral</a>
+    </div>
+  </nav>
+  <div class='canvas'>
+    <div id='github' class='container'>
+      <h1>Free LLM APIs via Github</h1>
+      <div>GitHub provides FREE API access to gpt-4o and gpt-4o-mini (Rate limited). All you need to do is set up the API key.</div>
+      <div class='row'>
+        <h2>Step 1. Get Github API Key</h2>
+        <div class='well'>
+          <a target="_blank" href="https://github.com/marketplace/models" class='btn'>Get API Key from GitHub</a>
+        </div>
+        <img src='getkey.gif?raw=true'>
+      </div>
+      <div class='row'>
+        <h2>Step 2. Connect API Key</h2>
+        <div class='well'>Go to the Configure tab and enter the API key, and save</div>
+        <img src='configure.png?raw=true'>
+      </div>
+      <div class='row'>
+        <h2>Step 3. Restart Bolt</h2>
+        <div class='well'>Restart Bolt and select "OpenAILike". You should see gpt4-o</div>
+        <img src='github.gif?raw=true'>
+      </div>
+    </div>
+    <!--
+    <div id='ollama' class='container'>
+      <h1>Local LLM via Ollama</h1>
+      <div class='row'>
+        <h2>Step 1. Get GitHuB API Key</h2>
+        <img src='getkey.gif?raw=true'>
+        <a target="_blank" href="https://github.com/marketplace/models" class='row'>Get API Key from GitHub</a>
+      </div>
+      <div class='row'>
+        <h2>Step 2. Connect API Key</h2>
+        <div>Go to the Configure tab and enter the API key, and save</div>
+        <img src='configure.png?raw=true'>
+      </div>
+      <div class='row'>
+        <h2>Step 3. Restart Bolt</h2>
+        <div>Restart Bolt and select "OpenAILike". You should see gpt4-o</div>
+      </div>
+    </div>
+    -->
+    <div id='api' class='container'>
+      <h1>LLM APIs</h1>
+      <div>Directly get API keys from each LLM API provider.</div>
+      <div class='row'>
+        <h2>Step 1. Get API Key</h2>
+        <div>Go get an API key from any LLM provider. Supported LLMs</div>
+        <ol>
+          <li>Groq</li>
+          <li>OpenAI</li>
+          <li>Anthropic</li>
+          <li>Openrouter</li>
+          <li>Google</li>
+          <li>Deepseek</li>
+          <li>Mistral</li>
+        </ol>
+      </div>
+      <div class='row'>
+        <h2>Step 2. Connect API Key</h2>
+        <div>Go to the Configure tab and enter the API key, and save</div>
+        <img src='config.png?raw=true'>
+      </div>
+      <div class='row'>
+        <h2>Step 3. Restart Bolt</h2>
+        <div>Restart Bolt and select the LLM provider and get started!</div>
+      </div>
+    </div>
+  </div>
+</main>
+<script>
+document.querySelector(".tab").addEventListener("click", (e) => {
+  let target
+  if (e.target.className === 'tab-item') {
+    
+  }
+})
+</script>
+</body>
+</html>
