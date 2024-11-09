@@ -4,6 +4,23 @@ module.exports = {
     {
       method: "shell.run",
       params: {
+        venv: "env",
+        message: "litellm --model github/gpt-4o",
+        on: [{
+          // The regular expression pattern to monitor.
+          // When this pattern occurs in the shell terminal, the shell will return,
+          // and the script will go onto the next step.
+          "event": "/http:\/\/\\S+/",   
+
+          // "done": true will move to the next step while keeping the shell alive.
+          // "kill": true will move to the next step after killing the shell.
+          "done": true
+        }]
+      }
+    },
+    {
+      method: "shell.run",
+      params: {
         env: { },                   // Edit this to customize environment variables (see documentation)
         path: "app",                // Edit this to customize the path to start the shell from
         message: [
@@ -29,6 +46,6 @@ module.exports = {
         // the input.event is the regular expression match object from the previous step
         url: "{{input.event[0]}}"
       }
-    }
+    },
   ]
 }
