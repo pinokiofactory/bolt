@@ -7,7 +7,6 @@ html, body {
 }
 main {
   font-family: Sans-serif;
-  margin: 50px auto;
   display: flex;
   height: 100%;
 }
@@ -21,12 +20,12 @@ a.row {
 h1 {
   font-size: 50px;
   letter-spacing: -2px;
+  margin: 0;
 }
 h2 {
   font-size: 25px;
 }
 .tab {
-  display: flex;
   align-items: center;
   text-decoration: none;
   color: silver;
@@ -37,10 +36,16 @@ h2 {
   color: gray;
   display: block;
   font-size: 16px;
+  word-break: break-word;
 }
 nav {
   width: 200px;
   height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow: auto;
+}
+.canvas {
   overflow: auto;
 }
 </style>
@@ -52,7 +57,7 @@ nav {
     <div class='tab'>
       <a href='#github' class='tab-item'>Free API via Github models</a>
       <a href='#ollama' class='tab-item'>Free Local LLM with Ollama</a>
-      <a href='#api' class='tab-item'>Claude/OpenAI/Gemini/Groq/OpenRouter/Mistral</a>
+      <a href='#api' class='tab-item'>Claude / OpenAI / Gemini / Groq / OpenRouter / Mistral</a>
     </div>
   </nav>
   <div class='canvas'>
