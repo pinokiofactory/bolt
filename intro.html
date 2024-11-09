@@ -4,7 +4,7 @@
 main {
   font-family: Sans-serif;
   max-width: 800px;
-  margin: 50px; auto;
+  margin: 50px auto;
 }
 a.row {
   text-decoration: none;
@@ -13,14 +13,76 @@ a.row {
 .row img {
   width: 100%;
 }
+h1 {
+  font-size: 50px;
+  letter-spacing: -2px;
+}
+h2 {
+  font-size: 25px;
+}
+.tab {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: silver;
+}
+.tab-item {
+  width: 100px;
+  padding: 20px;
+  text-align: center;
+}
+nav {
+  position: sticky;
+  top: 0;
+}
 </style>
 </head>
 <body>
 <main>
   <nav>
     <h1>Getting Started</h1>
+    <div class='tab'>
+      <a href='#github' class='tab-item'>Free API via Github models</a>
+      <a href='#ollama' class='tab-item'>Free Local LLM with Ollama</a>
+      <a href='#api' class='tab-item'>Claude/OpenAI/Gemini/Groq/OpenRouter/Mistral</a>
+    </div>
   </nav>
-  <div class='container'>
+  <div id='github' class='container'>
+    <h1>Free LLM APIs via GitHub</h1>
+    <div class='row'>
+      <h2>Step 1. Get GitHuB API Key</h2>
+      <img src='getkey.gif?raw=true'>
+      <a target="_blank" href="https://github.com/marketplace/models" class='row'>Get API Key from GitHub</a>
+    </div>
+    <div class='row'>
+      <h2>Step 2. Connect API Key</h2>
+      <div>Go to the Configure tab and enter the API key, and save</div>
+      <img src='configure.png?raw=true'>
+    </div>
+    <div class='row'>
+      <h2>Step 3. Restart Bolt</h2>
+      <div>Restart Bolt and select "OpenAILike". You should see gpt4-o</div>
+    </div>
+  </div>
+  <div id='ollama' class='container'>
+    <h1>Local LLM via Ollama</h1>
+    <div class='row'>
+      <h2>Step 1. Get GitHuB API Key</h2>
+      <img src='getkey.gif?raw=true'>
+      <a target="_blank" href="https://github.com/marketplace/models" class='row'>Get API Key from GitHub</a>
+    </div>
+    <div class='row'>
+      <h2>Step 2. Connect API Key</h2>
+      <div>Go to the Configure tab and enter the API key, and save</div>
+      <img src='configure.png?raw=true'>
+    </div>
+    <div class='row'>
+      <h2>Step 3. Restart Bolt</h2>
+      <div>Restart Bolt and select "OpenAILike". You should see gpt4-o</div>
+    </div>
+  </div>
+  <div id='api' class='container'>
+    <h1>LLM APIs</h1>
     <div class='row'>
       <h2>Step 1. Get GitHuB API Key</h2>
       <img src='getkey.gif?raw=true'>
@@ -37,5 +99,13 @@ a.row {
     </div>
   </div>
 </main>
+<script>
+document.querySelector(".tab").addEventListener("click", (e) => {
+  let target
+  if (e.target.className === 'tab-item') {
+    
+  }
+})
+</script>
 </body>
 </html>
