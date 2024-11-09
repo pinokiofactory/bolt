@@ -25,6 +25,12 @@ module.exports = {
         venv: "env",
         message: "pip install 'litellm[proxy]'"
       }
+    },
+    {
+      method: "fs.link",
+      params: {
+        venv: "env"
+      }
     }
   ]
 }

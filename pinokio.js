@@ -58,14 +58,13 @@ module.exports = {
         }]
       } else {
         return [{
-          default: true,
           icon: "fa-solid fa-power-off",
           text: "Start",
           href: "start.js",
         }, {
           icon: "fa-solid fa-key",
           text: "Getting Started",
-          href: "intro.html"
+          href: "intro.html?raw"
         }, {
           icon: "fa-solid fa-plug",
           text: "Update",
