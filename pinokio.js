@@ -64,7 +64,7 @@ module.exports = {
         }, {
           icon: "fa-solid fa-key",
           text: "Getting Started",
-          href: "intro.html?raw"
+          href: "intro.html?raw=true"
         }, {
           icon: "fa-solid fa-plug",
           text: "Update",
