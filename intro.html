@@ -52,13 +52,28 @@ nav {
   padding: 30px;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  flex-grow: 1;
 }
 .container {
   margin: 0 auto;
-  max-width: 800px;
+  max-width: 1000px;
 }
 a:active {
   border-right: 10px solid black;
+}
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background: black;
+  color: white;
+}
+.well {
+  padding: 10px;
+  background: whitesmoke;
+  margin: 20px 0;
+  box-sizing: border-box;
 }
 </style>
 </head>
@@ -76,17 +91,19 @@ a:active {
       <h1>Free LLM APIs via GitHub</h1>
       <div class='row'>
         <h2>Step 1. Get GitHuB API Key</h2>
+        <div class='well'>
+          <a target="_blank" href="https://github.com/marketplace/models" class='btn'>Get API Key from GitHub</a>
+        </div>
         <img src='getkey.gif?raw=true'>
-        <a target="_blank" href="https://github.com/marketplace/models" class='row'>Get API Key from GitHub</a>
       </div>
       <div class='row'>
         <h2>Step 2. Connect API Key</h2>
-        <div>Go to the Configure tab and enter the API key, and save</div>
+        <div class='well'>Go to the Configure tab and enter the API key, and save</div>
         <img src='configure.png?raw=true'>
       </div>
       <div class='row'>
         <h2>Step 3. Restart Bolt</h2>
-        <div>Restart Bolt and select "OpenAILike". You should see gpt4-o</div>
+        <div class='well'>Restart Bolt and select "OpenAILike". You should see gpt4-o</div>
       </div>
     </div>
     <div id='ollama' class='container'>
