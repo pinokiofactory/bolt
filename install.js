@@ -22,6 +22,12 @@ module.exports = {
     {
       method: "shell.run",
       params: {
+        message: "ollama pull hf.co/Qwen/Qwen2.5-Coder-32B-Instruct-GGUF"
+      }
+    },
+    {
+      method: "shell.run",
+      params: {
         venv: "env",
         message: "pip install litellm[proxy]"
       }
