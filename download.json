@@ -1,0 +1,8 @@
+{
+  "run": [{
+    "method": "shell.run",
+    "params": {
+      "message": "ollama pull {{args.id}}"
+    }
+  }]
+}

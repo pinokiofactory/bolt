@@ -76,6 +76,7 @@ a:active {
   border-radius: 5px;
   background: black;
   color: white;
+  margin: 5px 0;
 }
 .well {
   margin: 20px 0;
@@ -87,14 +88,28 @@ a:active {
 <main>
   <nav>
     <div class='tab'>
+      <a href='#ollama' class='tab-item'>Option 0. Local LLM (Ollama)</a>
       <a href='#github' class='tab-item'>Option 1. Use Free LLM API (Github)</a>
-      <!--
-      <a href='#ollama' class='tab-item'>Local LLM (Ollama)</a>
-      -->
       <a href='#api' class='tab-item'>Option 2. Use Claude / OpenAI / Gemini / Groq / OpenRouter / Mistral</a>
     </div>
   </nav>
   <div class='canvas'>
+    <div id='ollama' class='container'>
+      <h1>Local LLM via Ollama</h1>
+      <div class='row'>
+        <h2>Step 1. Download Qwen</h2>
+        <a class='btn' href="download.json?id=qwen2.5-coder:32b">qwen2.5-coder:32b (20GB)</a>
+        <a class='btn' href="download.json?id=qwen2.5-coder:14b">qwen2.5-coder:14b (9GB)</a>
+        <a class='btn' href="download.json?id=qwen2.5-coder:7b">qwen2.5-coder:7b (4.7GB)</a>
+        <a class='btn' href="download.json?id=qwen2.5-coder:3b">qwen2.5-coder:3b (1.9GB)</a>
+        <a class='btn' href="download.json?id=qwen2.5-coder:1.5b">qwen2.5-coder:1.5b (986MB)</a>
+        <a class='btn' href="download.json?id=qwen2.5-coder:0.5b">qwen2.5-coder:0.5b (531MB)</a>
+      </div>
+      <div class='row'>
+        <h2>Step 2. Restart Bolt</h2>
+        <div>Restart Bolt and select "Ollama". You should see Qwen.</div>
+      </div>
+    </div>
     <div id='github' class='container'>
       <h1>Free LLM APIs via Github</h1>
       <div>GitHub provides FREE API access to gpt-4o and gpt-4o-mini (Rate limited). All you need to do is set up the API key.</div>
@@ -116,25 +131,6 @@ a:active {
         <img src='github.gif?raw=true'>
       </div>
     </div>
-    <!--
-    <div id='ollama' class='container'>
-      <h1>Local LLM via Ollama</h1>
-      <div class='row'>
-        <h2>Step 1. Get GitHuB API Key</h2>
-        <img src='getkey.gif?raw=true'>
-        <a target="_blank" href="https://github.com/marketplace/models" class='row'>Get API Key from GitHub</a>
-      </div>
-      <div class='row'>
-        <h2>Step 2. Connect API Key</h2>
-        <div>Go to the Configure tab and enter the API key, and save</div>
-        <img src='configure.png?raw=true'>
-      </div>
-      <div class='row'>
-        <h2>Step 3. Restart Bolt</h2>
-        <div>Restart Bolt and select "OpenAILike". You should see gpt4-o</div>
-      </div>
-    </div>
-    -->
     <div id='api' class='container'>
       <h1>LLM APIs</h1>
       <div>Directly get API keys from each LLM API provider.</div>
