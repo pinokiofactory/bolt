@@ -2,7 +2,7 @@ module.exports = {
   daemon: true,
   run: [
     {
-      when: "{{process.env.OPENAI_API_KEY}}",
+      when: "{{env.OPENAI_API_KEY}}",
       method: "shell.run",
       params: {
         venv: "env",
