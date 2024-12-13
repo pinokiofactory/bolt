@@ -15,7 +15,8 @@ module.exports = {
       params: {
         path: "app",                // Edit this to customize the path to start the shell from
         message: [
-          "npm install"
+          "npm install",
+          "npm install wrangler@3.57.1"
         ]
       }
     },
