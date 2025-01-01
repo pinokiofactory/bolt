@@ -34,7 +34,7 @@ GOOGLE_GENERATIVE_AI_API_KEY=
 # You only need this environment variable set if you want to use oLLAMA models
 # DONT USE http://localhost:11434 due to IPV6 issues
 # USE EXAMPLE http://127.0.0.1:11434
-OLLAMA_API_BASE_URL=
+OLLAMA_API_BASE_URL=http://127.0.0.1:11434
 
 # You only need this environment variable set if you want to use OpenAI Like models
 OPENAI_LIKE_API_BASE_URL=http://localhost:4000
