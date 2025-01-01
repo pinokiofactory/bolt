@@ -71,7 +71,7 @@ COHERE_API_KEY=
 # Make sure to enable CORS
 # DONT USE http://localhost:1234 due to IPV6 issues
 # Example: http://127.0.0.1:1234
-LMSTUDIO_API_BASE_URL=
+LMSTUDIO_API_BASE_URL=http://127.0.0.1:1234
 
 # Get your xAI API key
 # https://x.ai/api
