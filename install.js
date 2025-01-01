@@ -5,7 +5,7 @@ module.exports = {
       method: "shell.run",
       params: {
         message: [
-          "git clone https://github.com/coleam00/bolt.new-any-llm app",
+          "git clone https://github.com/stackblitz-labs/bolt.diy app",
         ]
       }
     },
