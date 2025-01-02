@@ -74,6 +74,10 @@ module.exports = {
           text: "Install",
           href: "install.js",
         }, {
+          icon: "fa-solid fa-download",
+          text: "Download Ollama Model",
+          href: "download.json"
+        }, {
           icon: "fa-regular fa-circle-xmark",
           text: "Reset",
           href: "reset.js",
