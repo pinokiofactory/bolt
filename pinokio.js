@@ -1,8 +1,8 @@
 const path = require('path')
 module.exports = {
   version: "3.0",
-  title: "bolt",
-  description: "Prompt, run, edit, and deploy full-stack web apps. A fork of Bolt.new with support for ALL LLMs (OpenAI, Anthropic, Ollama, OpenRouter, Gemini, or Groq, Deepseek, Mistral, etc.) https://github.com/coleam00/bolt.new-any-llm",
+  title: "bolt diy",
+  description: "Prompt, run, edit, and deploy full-stack web apps. https://github.com/stackblitz-labs/bolt.diy",
   icon: "icon.png",
   menu: async (kernel, info) => {
     let installed = info.exists("app/node_modules")
