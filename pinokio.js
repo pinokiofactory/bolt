@@ -1,7 +1,7 @@
 const path = require('path')
 module.exports = {
   version: "3.0",
-  title: "bolt diy",
+  title: "bolt.diy",
   description: "Prompt, run, edit, and deploy full-stack web apps. https://github.com/stackblitz-labs/bolt.diy",
   icon: "icon.png",
   menu: async (kernel, info) => {
