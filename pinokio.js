@@ -1,6 +1,6 @@
 const path = require('path')
 module.exports = {
-  version: "2.0",
+  version: "3.0",
   title: "bolt",
   description: "Prompt, run, edit, and deploy full-stack web apps. A fork of Bolt.new with support for ALL LLMs (OpenAI, Anthropic, Ollama, OpenRouter, Gemini, or Groq, Deepseek, Mistral, etc.) https://github.com/coleam00/bolt.new-any-llm",
   icon: "icon.png",
