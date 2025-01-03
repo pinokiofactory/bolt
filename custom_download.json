@@ -3,7 +3,7 @@
     "method": "input",
     "params": {
       "title": "Download from Ollama",
-      "description": "Enter Ollama ID to download the model",
+      "description": "Enter Ollama ID to download the model (example: llama3.3)",
       "type": "modal",
       "form": [{
         "key": "id"
