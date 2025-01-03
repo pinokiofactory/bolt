@@ -1,18 +1,8 @@
 {
   "run": [{
-    "method": "input",
-    "params": {
-      "title": "Download from Ollama",
-      "description": "Enter Ollama ID to download the model",
-      "type": "modal",
-      "form": [{
-        "key": "id"
-      }]
-    }
-  }, {
     "method": "shell.run",
     "params": {
-      "message": "ollama pull {{input.id}}"
+      "message": "ollama pull {{args.id}}"
     }
   }]
 }

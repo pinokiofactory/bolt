@@ -76,7 +76,7 @@ module.exports = {
         }, {
           icon: "fa-solid fa-download",
           text: "Download Ollama Model",
-          href: "download.json"
+          href: "custom_download.json"
         }, {
           icon: "fa-regular fa-circle-xmark",
           text: "Reset",
