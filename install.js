@@ -24,7 +24,7 @@ module.exports = {
       method: "shell.run",
       params: {
         venv: "env",
-        message: "uv pip install litellm[proxy]"
+        message: "uv pip install litellm[proxy]==1.57.4"
       }
     },
     {
