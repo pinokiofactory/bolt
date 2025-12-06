@@ -1,6 +1,5 @@
 module.exports = {
   run: [
-    // Edit this step to customize the git repository to use
     {
       method: "shell.run",
       params: {
@@ -9,14 +8,13 @@ module.exports = {
         ]
       }
     },
-    // Edit this step with your custom install commands
     {
       method: "shell.run",
       params: {
-        path: "app",                // Edit this to customize the path to start the shell from
+        path: "app",
         message: [
-          "pnpm install",
-          "pnpm install wrangler@3.57.1"
+          "npm install",
+          "npm install wrangler@3.57.1"
         ]
       }
     },
