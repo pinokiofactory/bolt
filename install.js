@@ -24,12 +24,6 @@ module.exports = {
         venv: "env",
         message: "uv pip install litellm[proxy]==1.57.4"
       }
-    },
-    {
-      method: "fs.link",
-      params: {
-        venv: "env"
-      }
     }
   ]
 }
