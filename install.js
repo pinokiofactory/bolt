@@ -13,8 +13,12 @@ module.exports = {
       params: {
         path: "app",
         message: [
-          "npm install",
-          "npm install wrangler@3.57.1"
+          "pnpm install",
+          "pnpm install wrangler@4.153.0",
+          // redirected to app/.build.log: while vite's progress stream rewrites
+          // itself in place, Pinokio never sees the command finish and the
+          // install would hang here (same reason as in start.js / update.js)
+          "pnpm run build > .build.log 2>&1 || echo BUILD_FAILED_siehe_app_.build.log"
         ]
       }
     },
@@ -23,12 +27,6 @@ module.exports = {
       params: {
         venv: "env",
         message: "uv pip install litellm[proxy]==1.57.4"
-      }
-    },
-    {
-      method: "fs.link",
-      params: {
-        venv: "env"
       }
     }
   ]
